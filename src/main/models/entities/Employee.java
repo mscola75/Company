@@ -1,31 +1,20 @@
 package main.models.entities;
 
-import main.models.utility.Address;
+import main.models.utility.Name;
 
 import java.time.LocalDate;
 
 public class Employee {
-    private String name;
+    private Name name;
     private double salary;
     private LocalDate hireDay;
-    private Address anAddress;
 
-    public Employee(String name, double salary, int hireYear, int hireMonth, int hireDay, Address anAddress) {
+
+    public Employee(Name name, double salary, int hireYear, int hireMonth, int hireDay) {
         this.name = name;
         this.salary = salary;
         this.hireDay = LocalDate.of(hireYear,hireMonth,hireDay);
-        this.anAddress = anAddress;
-    }
-
-    public String getName() {
-
-        return name;
-    }
-
-    public void setName(String name) {
-
-        this.name = name;
-    }
+     }
 
     public double getSalary() {
         return salary;
@@ -40,19 +29,19 @@ public class Employee {
         return hireDay;
     }
 
+    public Name getName() {
+        return name;
+    }
+
+    public void setName(Name name) {
+        this.name = name;
+    }
+
     public void setHireDay(LocalDate hireDay) {
         this.hireDay = hireDay;
     }
 
-    public Address getAnAddress() {
-        return anAddress;
-    }
-
-    public void setAnAddress(Address anAddress) {
-        this.anAddress = anAddress;
-    }
-
-    @Override
+       @Override
     public String toString() {
         return "Name: " + name + "\n Salary: " + (int) salary + "\n Hire Date: " + hireDay;
     }
