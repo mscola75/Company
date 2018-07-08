@@ -1,6 +1,6 @@
 package main.service;
 
-import main.entities.Employee;
+import main.models.entities.Employee;
 
 public class EmployeeService {
     public void raiseSalary(Employee employee, double byPercent) {

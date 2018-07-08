@@ -1,4 +1,6 @@
-package main.entities;
+package main.models.entities;
+
+import main.models.utility.Address;
 
 import java.time.LocalDate;
 
@@ -8,10 +10,10 @@ public class Employee {
     private LocalDate hireDay;
     private Address anAddress;
 
-    public Employee(String name, double salary, int DOByear, int DOBmonth, int DOBday, Address anAddress) {
+    public Employee(String name, double salary, int hireYear, int hireMonth, int hireDay, Address anAddress) {
         this.name = name;
         this.salary = salary;
-        this.hireDay = LocalDate.of(year,month,day);
+        this.hireDay = LocalDate.of(hireYear,hireMonth,hireDay);
         this.anAddress = anAddress;
     }
 

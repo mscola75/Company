@@ -1,4 +1,6 @@
-package main.entities;
+package main.models.entities;
+
+import main.models.utility.Address;
 
 import java.util.*;
 

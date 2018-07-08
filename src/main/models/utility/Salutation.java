@@ -1,4 +1,4 @@
-package main.entities;
+package main.models.utility;
 
 public enum Salutation {
     Mr,
