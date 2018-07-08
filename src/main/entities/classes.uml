@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="0.0">main.entities.Employee</node>
+    <node x="2.5" y="79.0">main.entities.Manager</node>
+    <node x="0.0" y="227.0">main.Main</node>
+    <node x="0.0" y="153.0">main.service.EmployeeService</node>
+    <node x="182.0" y="153.0">main.entities.company</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="main.entities.Manager" target="main.entities.Employee">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="0.0" y="0.0" />
+  <SelectedNodes>
+    <node>main.entities.Manager</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
