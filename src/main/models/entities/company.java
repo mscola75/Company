@@ -6,10 +6,10 @@ import java.util.*;
 
 public class company {
 
-    String companyName;
-    HashSet<String> allEmployees;
-    Address address;
-    Employee CEO;
+    private String companyName;
+    private HashSet<String> allEmployees;
+    private Address address;
+    private Employee CEO;
 
 
     public company(String companyName, HashSet<String> allEmployees, Address address, Employee CEO) {

@@ -4,7 +4,7 @@ import main.models.utility.Address;
 import main.models.utility.Name;
 
 public class Manager extends Employee {
-    String responsibleFor;
+    private String responsibleFor;
 
     public Manager(Name aName, double salary, int DOByear, int DOBmonth, int DOBday,
                    Address anAddress, String responsibleFor) {

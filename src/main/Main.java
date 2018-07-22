@@ -7,7 +7,7 @@ import main.models.utility.Salutation;
 import main.service.EmployeeFactory;
 import main.service.EmployeeService;
 
-import java.util.Date;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -39,6 +39,7 @@ public class Main {
         EmployeeService employeeService = new EmployeeService();
 
 
+
         for (Employee e : staff) {
             employeeService.raiseSalary(e, 100);
         }
@@ -46,6 +47,15 @@ public class Main {
         //print all employees
         for (Employee e : staff) {
             System.out.println("Name:" + e.getName() + " salary: " + e.getSalary());
+        }
+
+        //sort
+        Arrays.sort(staff, (one, two) ->
+                (int) (one.getName().getFirstName().length() -  two.getName().getFirstName().length()));
+
+        System.out.println();
+        for (Employee e : staff) {
+            System.out.println(e);
         }
     }
 }

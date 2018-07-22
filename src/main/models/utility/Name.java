@@ -4,11 +4,11 @@ import java.util.Date;
 
 public class Name implements Comparable<Name> {
 
-    Salutation salutation;
-    String firstName;
-    String lastName;
-    Date DOB;
-    Address address;
+    private Salutation salutation;
+    private String firstName;
+    private String lastName;
+    private Date DOB;
+    private Address address;
 
     public Name(Salutation salutation, String aFirstName, String aLastName, Date aDOB, Address anAddress) {
         this.salutation = salutation;
