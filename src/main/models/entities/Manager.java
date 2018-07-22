@@ -6,9 +6,9 @@ import main.models.utility.Name;
 public class Manager extends Employee {
     private String responsibleFor;
 
-    public Manager(Name aName, double salary, int DOByear, int DOBmonth, int DOBday,
-                   Address anAddress, String responsibleFor) {
-        super(aName, salary, DOByear, DOBmonth, DOBday);
+    public Manager(Name aName, Address anAddress, double salary, int DOByear, int DOBmonth, int DOBday,
+                   String responsibleFor) {
+        super(aName, anAddress, salary, DOByear, DOBmonth, DOBday);
         this.responsibleFor = responsibleFor;
     }
 

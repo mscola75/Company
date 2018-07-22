@@ -8,14 +8,12 @@ public class Name implements Comparable<Name> {
     private String firstName;
     private String lastName;
     private Date DOB;
-    private Address address;
 
-    public Name(Salutation salutation, String aFirstName, String aLastName, Date aDOB, Address anAddress) {
+    public Name(Salutation salutation, String aFirstName, String aLastName, Date aDOB) {
         this.salutation = salutation;
         this.firstName = aFirstName;
         this.lastName = aLastName;
         this.DOB = aDOB;
-        this.address = anAddress;
     }
 
     public Salutation getSalutation() {
@@ -50,13 +48,6 @@ public class Name implements Comparable<Name> {
         this.DOB = DOB;
     }
 
-    public Address getAddress() {
-        return address;
-    }
-
-    public void setAddress(Address address) {
-        this.address = address;
-    }
 
     @Override
     public int compareTo(Name aName) {
@@ -77,6 +68,6 @@ public class Name implements Comparable<Name> {
 
     @Override
     public String toString() {
-        return salutation + firstName + " " + lastName + " " + DOB + " " + address;
+        return salutation + firstName + " " + lastName + " " + DOB;
     }
 }

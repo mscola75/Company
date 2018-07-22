@@ -1,6 +1,6 @@
 package main.models.entities;
 
-import main.models.utility.Name;
+import main.models.utility.*;
 
 import java.time.LocalDate;
 
@@ -8,9 +8,11 @@ public class Employee {
     private Name name;
     private double salary;
     private LocalDate hireDay;
+    private Address address;
 
 
-    public Employee(Name name, double salary, int hireYear, int hireMonth, int hireDay) {
+    public Employee(Name name, Address anAddress, double salary, int hireYear, int hireMonth, int hireDay) {
+        this.address = anAddress;
         this.name = name;
         this.salary = salary;
         this.hireDay = LocalDate.of(hireYear,hireMonth,hireDay);
@@ -41,7 +43,7 @@ public class Employee {
         this.hireDay = hireDay;
     }
 
-       @Override
+    @Override
     public String toString() {
         return "Name: " + name + "\n Salary: " + (int) salary + "\n Hire Date: " + hireDay;
     }
@@ -56,5 +58,11 @@ public class Employee {
         return super.hashCode();
     }
 
+    public Address getAddress() {
+        return address;
+    }
 
+    public void setAddress(Address address) {
+        this.address = address;
+    }
 }
