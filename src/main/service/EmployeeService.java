@@ -1,8 +1,7 @@
 package main.service;
 
 import main.models.entities.Employee;
-import java.util.Collection;
-import java.util.HashSet;
+import java.util.*;
 
 /**
  * Employee Service
@@ -10,7 +9,7 @@ import java.util.HashSet;
  */
 public class EmployeeService {
 
-    private Collection<Employee> employeeCollection = new HashSet<>();
+    private Set<Employee> employeeCollection = new HashSet<>();
 
     public EmployeeService() {
     }
@@ -33,6 +32,24 @@ public class EmployeeService {
             e.printStackTrace();
             return false;
         }
+    }
+
+    /**
+     * Adds an employee. Checks if the employee has already been added
+     * @param anEmployee
+     * @return true or false if the employee was added
+     */
+    public boolean addEmployee(Employee anEmployee) {
+
+        employeeCollection.add(anEmployee);
+        System.out.println("Does the  collection contain the employee? " + employeeCollection.contains(anEmployee));
+
+        if (employeeCollection.contains(anEmployee) == true) {
+            System.out.println("Not added.");
+            return false;
+        }
+
+        return true;
     }
 
     /**
