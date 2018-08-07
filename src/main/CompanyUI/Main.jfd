@@ -1,0 +1,118 @@
+JFDML JFormDesigner: "7.0.0.0.92" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp tabbedPane1::::681:x, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp tabbedPane1:::::x, space :::p}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+				name: "tabbedPane1"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :p:20:p, par l {par t:::p {seq l {comp label5:::p::p, space :::x, comp txtStreet:::p:170:p}, seq l {comp label1:::p:126:p, space :::p, comp txtFirstName:::p:131:p}, seq l {comp label2:::p:126:p, space :::p, comp txtLastName:::p:131:p}, seq l {comp label6:::p::p, space :::x, comp txtPostalCode:::p:170:p}, seq l {comp label7:::p::p, space :::x, comp txtCity:::p:170:p}, seq t {comp label8:::p::p, space :::x, comp txtCountry:::p:170:p}}, seq {comp label10:::p:126:p, space :6:6:p, comp cboDOBYear:::p:69:p, space :6:6:p, comp cboDOBMonth:::p::p, space :6:6:p, comp cboDOBDay:::p::p, space :::x, par l:::p {seq {par l {comp label4:::p:126:p, seq l {space :p:95:p, comp btnPopulate:::p::p}}, space :p:192:p, par l {comp button1:::p::p, comp txtPosition:::::x}}, seq {comp label3:::p:126:p, space :::p, comp cboHireYear:::p:69:p, space :::p, comp cboHireMonth:::p::p, space :::p, comp cboHireDay:::p::p}, seq l {comp label9:::p:126:p, space u:::p, comp txtSalary:::p:144:p}}}}, space :p:27:p}}"
+					"$verticalGroup": "par l {seq l {space :p:37:p, par l {seq {par b {comp txtFirstName::b:p::p, comp label1::b:p::p}, space u:::p, par b {comp label2::b:p::p, comp txtLastName::b:p::p}}, seq {par b {comp label3::b:p::p, comp cboHireYear::b:p::p, comp cboHireMonth::b:p::p, comp cboHireDay::b:p::p}, space s:::p, par b {comp label4::b:p::p, comp txtPosition::b:p::p}}}, par l {seq {space :::p, par l {comp txtStreet:::p::p, comp label5::t:p::p}}, seq l {space :p:15:p, par b {comp label9::b:p::p, comp txtSalary::b:p::p}}}, space :::p, par b {comp txtPostalCode::b:p::p, comp label6::b:p::p}, space u:::p, par b {comp txtCity::b:p::p, comp label7::b:p::p}, space u:::p, par b {comp txtCountry::b:p::p, comp label8::b:p::p}, par l {seq {space :p:19:p, par l {comp button1:::p::p, seq l {space :3:3:p, comp label10:::p::p}, comp cboDOBYear:::p::p, comp cboDOBMonth:::p::p, comp cboDOBDay:::p::p}}, seq l {space :p:41:p, comp btnPopulate:::p::p}}, space ::134:x}}"
+				} ) {
+					name: "panel1"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "panel1MouseClicked", true ) )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txtFirstName"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "First Name"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "Last Name"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txtLastName"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "Hire date:"
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "cboHireYear"
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "cboHireMonth"
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "cboHireDay"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "Position"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txtPosition"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txtStreet"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"text": "Street"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"text": "Postal Code"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txtPostalCode"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label7"
+						"text": "City"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txtCity"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label8"
+						"text": "Country"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txtCountry"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label9"
+						"text": "Salary"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txtSalary"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button1"
+						"text": "Submit"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label10"
+						"text": "Date of Birth"
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "cboDOBYear"
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "cboDOBMonth"
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "cboDOBDay"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btnPopulate"
+						"text": "Populate"
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Add Employee"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 695, 490 )
+		} )
+	}
+}
